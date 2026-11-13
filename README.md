@@ -1,5 +1,9 @@
 # Herding Quantum Cats · Team Quantum Thinkers
 
+![Herding quantum cats: Team Quantum Thinkers at Qiskit Fall Fest 2026](docs/slide_cover.png)
+
+**[📊 Pitch deck (PDF)](pitch/pitch_Quantum_Thinkers.pdf)** · **[📓 Notebook](team_Quantum_Thinkers.ipynb)** · **[📦 Submission file](submission_Quantum_Thinkers.json)**
+
 Our solution to the **Herding Quantum Cats** challenge at **Qiskit Fall Fest 2026**, University of Stuttgart (10 November 2026).
 
 The challenge: prepare the cleanest 12-qubit GHZ ("cat") state and the biggest certifiably entangled one, first on a noisy simulator of IBM's 156-qubit Heron processor and then on the real **ibm_kingston**.
@@ -27,6 +31,16 @@ F is a certified lower bound on the fidelity, F = P + (X − 1)/2. A cat counts 
 
 For big cats we grow breadth-first **trees** on good qubits only, with dynamical decoupling on hardware. The evidence table in the notebook (Mission 6) lists every step, including what did not help.
 
+## Pitch deck
+
+Our 5-minute pitch: **[PDF](pitch/pitch_Quantum_Thinkers.pdf)** (opens in the browser) or **[PowerPoint](pitch/pitch_Quantum_Thinkers.pptx)** (with speaker notes). Built on the official Qiskit Fall Fest 2026 template.
+
+| Our cat in three numbers | Our recipe, with chip maps |
+|---|---|
+| ![Slide: 0.978 on the simulator, 0.913 on ibm_kingston, 40 qubits certified](docs/slide_results.png) | ![Slide: four steps, with baseline and searched-chain chip maps](docs/slide_recipe.png) |
+| **What helped, and by how much** | **On real hardware** |
+| ![Slide: bar chart of fidelity after each step](docs/slide_evidence.png) | ![Slide: hardware results and biggest cats](docs/slide_hardware.png) |
+
 ## Repository contents
 
 | File | What it is |
@@ -37,6 +51,7 @@ For big cats we grow breadth-first **trees** on good qubits only, with dynamical
 | `submission_Quantum_Thinkers_in_deadline_32.json` | The same submission with our in-deadline 32-qubit Biggest Cat |
 | `final_job.json`, `big_job_*.json`, `*.qpy` | Saved hardware jobs and circuits, so the notebook can re-analyse our runs |
 | `pitch/` | Our 5-minute pitch deck (PDF and PowerPoint) |
+| `docs/` | Slide previews used in this README |
 
 ## Run it
 
